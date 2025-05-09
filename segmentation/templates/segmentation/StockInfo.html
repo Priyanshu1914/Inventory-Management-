@@ -1,0 +1,41 @@
+{% extends "navbar.html" %}
+{% load static %}
+
+{% block title %}Stock Info Page{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'StockInfo.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <button class="header-btn">Stock Info</button>
+    
+    <div class="input-section">
+        <div class="input-row">
+            <label for="product-id">Product ID</label>
+            <input type="text" id="product-id" placeholder="Enter Product ID">
+        </div>
+        <div class="input-row">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" placeholder="Enter Product Quantity">
+        </div>
+        <button class="update-btn" id="update-stock">Update Stock</button>
+    </div>
+    
+    <button class="sub-header-btn">Current Stock Details</button>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Total Quantity</th>
+            </tr>
+        </thead>
+        <tbody id="stock-table">
+            <!-- Rows will be dynamically added here -->
+        </tbody>
+    </table>
+</div>
+<script src="{% static 'StockInfo.js' %}"></script>
+{% endblock %}

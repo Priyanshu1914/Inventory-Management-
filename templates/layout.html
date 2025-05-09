@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Insights Hub Navbar</title>
+    <link rel="stylesheet" href="{% static 'C:\Users\piyus\OneDrive\Desktop\PROJECTS\customer segmentation\customer_segmantation\static\layout.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="sidebar">
+            <button class="menu-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <button class="nav-btn home active" onclick="window.location.href='{% url 'main' %}'">
+                <img src="https://img.icons8.com/fluency/48/000000/home.png" alt="Home Icon">
+            </button>
+            <button class="nav-btn">
+                <img src="https://img.icons8.com/fluency/48/000000/overview.png" alt="Stock Info Icon">
+            </button>
+            <button class="nav-btn">
+                <img src="https://img.icons8.com/fluency/48/000000/idea.png" alt="Help Icon">
+            </button>
+        </div>
+        <div class="header">
+            <h1>Sales Insights Hub</h1>
+        </div>
+    </div>
+</body>
+</html>

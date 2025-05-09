@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    padding: 20px;
+    margin: auto;
+    background-color: #00c6d6;
+    color: white;
+    border-bottom: 2px solid #0088a3;
+    text-align: center;
+}
+div {
+    margin-right: 35px;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0); 
+    padding: 20px; 
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    color: #0088a3;
+    text-align: left;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    background-color: #00bcd4;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin-bottom: 2000px;
+}
+
+ul li a:hover {
+    background-color: #0088a3;
+}
+
+/* Table Styles */
+table {
+    border-radius: 2px solid black;
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+table th, table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+table thead {
+    background-color: #f4f8f9;
+}
+
+table thead th {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Back Button */
+.back-button {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #00bcd4;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0088a3;
+}

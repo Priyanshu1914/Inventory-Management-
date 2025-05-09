@@ -1,0 +1,25 @@
+{% extends "navbar.html" %}
+{% load static %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class='main-content'>
+  <div class="dashboard-container">
+      <!-- Middle Section -->
+      <main>
+          <!-- Upload Section -->
+          <form id="upload-form" enctype="multipart/form-data" action="" method="post">
+              {% csrf_token %}
+              <label for="csv-upload">Add Your CSV</label>
+              <input type="file" id="csv-upload" name="csv_file" accept=".csv" required />
+              <button type="submit" id="process-data">Process Data</button>
+          </form>      
+      </main>
+  </div>
+</div>
+{% endblock %}

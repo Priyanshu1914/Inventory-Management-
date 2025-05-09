@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Insights Hub Landig Page</title>
+    <link rel="stylesheet" href="{% static 'C:\Users\piyus\OneDrive\Desktop\PROJECTS\customer segmentation\customer_segmantation\segmentation\static\landing.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Sales Insights Hub</h1>
+        <p><em>"Transforming Your Sales Data Into Insights"</em></p>
+    </header>
+
+    <main>
+        <div class="info-box">
+            <h2>Your Personalized Solution for Trend Analysis and Stocks Management</h2>
+            <p><strong>Seamless Integration:</strong> Simple to use, with powerful features.</p>
+            <p><strong>AI-Powered:</strong> Advanced machine learning for accurate results.</p>
+            <p><strong>Real-Time Insights:</strong> Get results instantly, anytime, anywhere.</p>
+            <h3>Get Started Now!</h3>
+            <img src="rocket-icon.png" alt="Rocket Icon">
+        </div>
+        <div class="buttons">
+            <button class="login" onclick="window.location.href='{% url 'login' %}'">Log in</button>
+            <button class="signup" onclick="window.location.href='{% url 'signup' %}'">Sign Up</button>
+        </div>
+    </main>
+
+    <footer>
+        <a href="{% url 'contactus' %}">contactus</a>
+        <a href="{% url 'TermsOfService' %}">TermsOfService</a>
+        <a href="{% url 'PrivacyPolicy' %}">PrivacyPolicy</a>
+    </footer>
+</body>
+</html>

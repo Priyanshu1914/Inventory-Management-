@@ -1,0 +1,78 @@
+{% extends "navbar.html" %}
+{% load static %}
+
+{% block title %}Help Page{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'help.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- Main container for the help page -->
+<div class="help-container">
+    <header>
+        <h1>Help</h1>
+        <p>Everything you need to know about using the Customer Segmentation Tool</p>
+    </header>
+
+    <!-- How to Use the Tool Section -->
+    <section class="how-to-use">
+        <h2>How to Use the Tool</h2>
+        <div class="section">
+            <h3>Log In / Sign Up</h3>
+            <p>To start using the tool, log in with your account or sign up if you are a new user.</p>
+        </div>
+        <div class="section">
+            <h3>Upload Sales Data</h3>
+            <p>Click on the "Upload Sales Data" button, select a properly formatted CSV file, and upload it to the tool.</p>
+        </div>
+        <div class="section">
+            <h3>View Results</h3>
+            <p>The segmentation results will display high-selling, mid-selling, and low-selling products with graphical summaries like bar charts and pie charts.</p>
+        </div>
+        <div class="section">
+            <h3>Manage Stock Information</h3>
+            <p>You can add or update stock information using the "Add Stock" button. The stock table will automatically update based on uploaded sales data.</p>
+        </div>
+        <div class="section">
+            <h3>Access Profile History</h3>
+            <p>View your recent results or all previous processed results through your profile section.</p>
+        </div>
+    </section>
+
+    <!-- Common Issues and Solutions Section -->
+    <section class="common-issues">
+        <h2>Common Issues and Solutions</h2>
+        <div class="section">
+            <h3>Issue: CSV File Not Uploading</h3>
+            <p>Make sure the file format is CSV, and ensure it follows the required structure: columns for product names, sales, etc.</p>
+        </div>
+        <div class="section">
+            <h3>Issue: Incorrect Results</h3>
+            <p>If the segmentation results are not as expected, verify the accuracy of your data and ensure the file is not corrupted.</p>
+        </div>
+        <div class="section">
+            <h3>Issue: Stock Updates Not Reflecting</h3>
+            <p>Ensure you have uploaded the correct sales data. The tool will update the stock automatically based on the sales data provided.</p>
+        </div>
+    </section>
+
+    <!-- Contact Support Section -->
+    <section class="contact-support">
+        <h2>Contact Support</h2>
+        <p>If you need further assistance, please reach out to our support team:</p>
+        <p>Email: yehaicodex009.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <!-- Tips for Best Use Section -->
+    <section class="tips">
+        <h2>Tips for Best Use</h2>
+        <ul>
+            <li>Ensure your CSV file is properly formatted with accurate product sales data.</li>
+            <li>Upload the latest version of the tool for optimal performance.</li>
+            <li>Check the stock levels regularly to ensure up-to-date information.</li>
+        </ul>
+    </section>
+</div>
+{% endblock %}

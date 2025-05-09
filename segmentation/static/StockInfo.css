@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: row; /* Allow side-by-side layout with navbar */
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    height: 590px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: -1445px; /* Adjust to bring the container closer to navbar */
+    flex-grow: 1; /* Ensure container expands to fill remaining space */
+}
+
+.header-btn, .sub-header-btn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.input-section {
+    background-color: #00bcd4;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-row label {
+    flex: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.input-row input {
+    flex: 2;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.update-btn {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+table th {
+    background-color: #e0f7fa;
+    color: #00796b;
+    font-weight: bold;
+}

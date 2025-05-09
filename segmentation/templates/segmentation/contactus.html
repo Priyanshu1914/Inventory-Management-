@@ -1,0 +1,38 @@
+{% extends "landing.html" %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'contactus.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+        <h1>Contact Us</h1>
+        <p>We’re here to assist you! Please use the details below to get in touch with us.</p>
+
+    <section>
+        <h2>Email Us</h2>
+        <p>For general inquiries or technical support, email us at:</p>
+        <p><strong>Email:</strong> yehaicodex009.com</p>
+    </section>
+    <section>
+        <h2>Call Us</h2>
+        <p>If you need immediate assistance, give us a call:</p>
+        <p><strong>Phone:</strong> 9302208078</p>
+    </section>
+    <section>
+        <h2>Visit Us</h2>
+        <p>You can also visit our office at:</p>
+        <p><strong>Address:</strong></p>
+        <p>Code_X Headquarters<br>123 Innovation Drive<br>Lake City Bhopal</p>
+    </section>
+    <section>
+        <h2>Follow Us</h2>
+        <p>Stay updated and connect with us on social media:</p>
+        <ul>
+            <li><a href="https://facebook.com/codex" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/codex" target="_blank">Twitter</a></li>
+            <li><a href="https://linkedin.com/company/codex" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+</div>
+{% endblock %}

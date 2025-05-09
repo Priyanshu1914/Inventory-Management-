@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmentation Results</title>
+    <link rel="stylesheet" href="{% static 'C:\Users\piyus\OneDrive\Desktop\PROJECTS\customer segmentation\customer_segmantation\segmentation\static\result.css' %}">
+</head>
+</head>
+<body>
+    <h1>Selling Results</h1>
+    <ul>
+    <div>
+    <li><a href="/media/{{ high_sales_csv }}">DOWNLOAD CSV</a></li>
+    <h2>TOP 5 HIGH SELLING PRODUCT</h2>
+    <table>
+        <thead>
+            <tr>
+                {% for column in high_top.0.keys %}
+                <th>{{ column }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in high_top %}
+            <tr>
+                {% for value in row.values %}
+                <td>{{ value }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    <div>
+    <li><a href="/media/{{ mid_sales_csv }}">DOWNLOAD CSV</a></li>
+    <h2>TOP 5 MEDIUM SELLING PRODUCT</h2>
+    <table>
+        <thead>
+            <tr>
+                {% for column in mid_top.0.keys %}
+                <th>{{ column }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in mid_top %}
+            <tr>
+                {% for value in row.values %}
+                <td>{{ value }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    <div>
+    <li><a href="/media/{{ low_sales_csv }}">DOWNLOAD CSV</a></li>
+    <h2>TOP 5 LOW SELLING PRODUCT</h2>
+    <table>
+        <thead>
+            <tr>
+                {% for column in low_top.0.keys %}
+                <th>{{ column }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in low_top %}
+            <tr>
+                {% for value in row.values %}
+                <td>{{ value }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    <a class="back-button" href="{% url 'main' %}">Back to Dashboard</a>
+</body>
+</html>
